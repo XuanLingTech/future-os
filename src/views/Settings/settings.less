@@ -1,0 +1,169 @@
+.config-panel {
+  padding: 24px;
+
+  .ant-card {
+    cursor: pointer;
+  }
+
+  .config-head {
+    margin-top: -6px;
+    margin-bottom: 14px;
+  }
+
+  .bar {
+    width: 4px;
+    height: 16px;
+    background: #5090FB;
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+
+  .config-title {
+    font-size: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 18px;
+  }
+
+  .back {
+    display: inline-block;
+    background: #e6e6e67a;
+    border-radius: 6px;
+    padding: 1px 4px;
+    margin-top: 2px;
+    float: right;
+    margin-right: 32px;
+
+    :deep(.anticon) {
+      font-size: 16px;
+    }
+  }
+
+  .btn-group {
+    display: inline-block;
+    float: right;
+    margin-right: 12px;
+
+    .btn {
+      display: inline-block;
+      background: #e6e6e67a;
+      border-radius: 6px;
+      padding: 1px 4px;
+      margin-top: 2px;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+
+    .anticon {
+      font-size: 16px;
+    }
+  }
+
+  .config-body {
+    :deep(.ant-card) {
+      border-radius: 6px;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    :deep(.ant-card-body) {
+      padding: 12px;
+    }
+
+    .ant-avatar-square {
+      border-radius: 8px;
+    }
+
+    .config-user-info {
+      .user-info {
+        text-align: left;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 10px;
+      }
+
+      .user-name {
+        margin-left: 0 !important;
+        font-size: 18px;
+      }
+
+      .user-id {
+        color: rgba(67, 73, 81, 0.7);
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+
+    .ant-input-search {
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    .ant-list-item {
+      padding: 8px 12px;
+      margin: 8px 0;
+      border-radius: 6px;
+      cursor: pointer;
+
+      &.active {
+        background: #F5F7F9;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          background: #5090FB;
+          width: 3px;
+          height: 16px;
+          border-radius: 24px;
+        }
+      }
+
+      &:hover {
+        background: #F5F7F9;
+      }
+    }
+
+    .ant-page-header {
+      padding: 0;
+      margin-bottom: 24px;
+    }
+
+    :deep(.ant-breadcrumb) {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .config-content {
+      height: 458px;
+      overflow-y: auto;
+      margin: 0 -12px;
+      padding: 0 12px;
+
+      /*滚动条整体样式*/
+
+      &::-webkit-scrollbar {
+        /*高宽分别对应横竖滚动条的尺寸*/
+        width: 2px;
+        height: 2px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        /*滚动条里面小方块*/
+        border-radius: 12px;
+        background: #85868A;
+      }
+
+      &::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        background: transparent;
+      }
+    }
+  }
+}
